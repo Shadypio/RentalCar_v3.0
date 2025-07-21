@@ -12,6 +12,15 @@ A modern full-stack rental car management system built with React.js frontend an
 - **Responsive Design**: Mobile-friendly Material-UI interface
 - **Real-time Data**: React Query for optimized data fetching
 
+## 🌐 Live Demo
+
+🚀 **Deployed Application**: [https://rental-car-v3-0.vercel.app](https://rental-car-v3-0.vercel.app)
+
+The application is deployed using:
+- **Frontend**: Vercel (React.js)
+- **Backend**: Render (Node.js/Express)
+- **Database**: PostgreSQL (Render)
+
 ## 🛠️ Tech Stack
 
 ### Frontend

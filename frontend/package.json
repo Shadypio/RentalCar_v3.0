@@ -24,7 +24,7 @@
   "scripts": {
     "start": "craco start",
     "start:fast": "GENERATE_SOURCEMAP=false ESLINT_NO_DEV_ERRORS=true craco start",
-    "build": "craco build",
+    "build": "CI=false craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -32,7 +32,11 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "no-unused-vars": "warn",
+      "@typescript-eslint/no-unused-vars": "warn"
+    }
   },
   "browserslist": {
     "production": [

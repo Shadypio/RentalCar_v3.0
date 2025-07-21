@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: rental-car-backend
+    runtime: node
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+databases:
+  - name: rental-car-db
+    databaseName: rental_car_db
+    user: rental_user
+    plan: free

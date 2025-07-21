@@ -21,6 +21,8 @@
     "express-validator": "^7.0.1",
     "sequelize": "^6.35.1",
     "mysql2": "^3.6.5",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
     "express-rate-limit": "^7.1.5"
   },
   "devDependencies": {

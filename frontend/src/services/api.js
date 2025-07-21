@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Use relative URL when proxy is configured, or absolute URL in production
+// Use environment variable for production, fallback to relative URL for development
 const API_BASE_URL = process.env.REACT_APP_API_URL || '/api';
 
 // Create axios instance
@@ -9,6 +9,7 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 10000, // 10 seconds timeout
 });
 
 // Add auth token to requests
